@@ -265,7 +265,7 @@ $(document).ready(function () {
             // Move to slide 2 of section 1
             fullpage_api.moveTo(1, 1); // slide 2
         }
-        fullpage_api.moveTo(1, 1); // slide 2
+        
     });
 
     function checkForLoggedInUser() {
