@@ -213,6 +213,8 @@ $(document).ready(function () {
         },
     ];
 
+
+
     // FULLPAGE Initialisation
     new fullpage('#fullpage', {
         // licence
@@ -227,6 +229,7 @@ $(document).ready(function () {
     });
 
     fullpage_api.setAllowScrolling(true); // prevent scroll of sections and slides
+    
 
     // Set Up a Variable to track the User
     let user;
@@ -331,6 +334,7 @@ $(document).ready(function () {
         }
     }
 
+    
     // ___________POPULATE_____________
     function populateCards(array) {
         $('#results').html('');
@@ -342,7 +346,7 @@ $(document).ready(function () {
         array.forEach(item => {
             // Create a card for that property:
             const card = `
-                <div class="games">
+                <div class="games" data-tilt>
                     <div class="swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
